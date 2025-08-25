@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SafeStep - Rate Risks</title>
+</head>
+<body>
+<header>
+  <div class="blade">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <span class="appname">SafeStep</span>
+</header>
+
+<nav id="sidebar">
+  <a href="HomePage.html">Home</a>
+  <a href="HistoryPage.html">History</a>
+</nav>
+
+
+  <h2>Rate Risks for <span id="projectNameDisplay"></span></h2>
+
+  <table border="1" cellpadding="5" id="risksTable">
+    <thead>
+      <tr>
+        <th>Risk</th>
+        <th>Likelihood (1-5)</th>
+        <th>Impact (1-5)</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody id="risksContainer"></tbody>
+  </table>
+
+  <button id="goToResults">Go to Results</button>
+
+  <script src="blade.js"></script>
+  <script src="rating.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
